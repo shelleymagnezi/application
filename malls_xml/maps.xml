@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="maps.xsd" generated="2013-03-07T22:11:43">
+<marker>
+<title>Fry&apos;s San Jose</title>
+<link>http://www.frys.com/sanjose.html</link>
+<description>San Jose Store</description>
+<Address>550 E. Brokaw Road</Address>
+<CityState>San Jose, CA</CityState>
+<GroupId>frys</GroupId>
+</marker>
+<marker>
+<title>Fry&apos;s Sunnyvale</title>
+<link>http://www.frys.com/sunnyvale.html</link>
+<description>Sunnyvale Store</description>
+<Address>1077 East Arques Ave</Address>
+<CityState>Sunnyvale, CA</CityState>
+<GroupId>frys</GroupId>
+</marker>
+<marker>
+<title>Fry&apos;s Palo Alto</title>
+<link>http://www.frys.com/paloalto.html</link>
+<description>Palo Alto Store</description>
+<Address>340 Portage Ave</Address>
+<CityState>Palo Alto, CA</CityState>
+<GroupId>frys</GroupId>
+</marker>
+<marker>
+<title>HomeDepot Sunnyvale</title>
+<link>http://www.smartpages.com/home/homedepott86187614</link>
+<description>Sunnyvale Store</description>
+<Address>680 Kifer Rd</Address>
+<CityState>Sunnyvale, CA</CityState>
+<GroupId>homedepot</GroupId>
+</marker>
+<marker>
+<title>HomeDepot Campbell</title>
+<link>http://www.smartpages.com/home/homedepotinc17</link>
+<description>Campbell Store</description>
+<Address>480 E Hamilton Ave</Address>
+<CityState>Cambell, CA</CityState>
+<GroupId>homedepot</GroupId>
+</marker>
+<marker>
+<title>Yahoo! Sunnyvale</title>
+<link>http://developer.yahoo.com</link>
+<description>Sunnyvale Campus</description>
+<GroupId>yahoo</GroupId>
+</marker>
+</dataroot>

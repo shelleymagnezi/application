@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="dooranim.js"></script>
+
+<style>
+/*This is a personal project that I have been working on.  I obtained the original code  from --http://codepen.io/fixcl/pen/eBlus
+  and have modified it.  Initially it worked only in Firefox. Now it works in Chrome but there is a discrepancy since Chrome reads css and 
+  Firefox uses jQuery.   */
+  /* I created the file openlogo  which is basically decorative text that is overlaid on the css button*/
+  
+  
+ html, body, div {
+    /* Height and width fallback for older browsers. */
+    height: 100%;
+    width: 100%;
+
+    /* Set the height to match that of the viewport. */
+    height: 100vh;
+
+    /* Set the width to match that of the viewport. */
+    width: 100vw;
+
+    /* Remove any browser-default margins. */
+    margin: 0;
+	overflow: hidden;
+	
+}
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+input[type="checkbox"]:checked ~ button {
+	visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ #door-left {
+  	transform: translateX(-50%);
+  	transform-origin: 0 50% 0;
+	transform: rotateY(90deg) ;
+	
+	
+  -webkit-transform: translateX(-50%);
+  	-webkit-transform-origin: 0 50% 0;
+	-webkit-transform: rotateY(90deg) ;
+	-moz-transform-origin: 0 50% 0;
+	-moz-transform: translateX(-50%);
+	-moz-transform: rotateY(90deg) ;
+}
+
+input[type="checkbox"]:checked ~ #door-right {
+	transform-origin: 100% 50% 0;
+	transform: rotateY(-90deg);
+	
+	
+	-webkit-transform-origin: 100% 50% 0;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform-origin: 100% 50% 0;
+	-moz-transform: rotateY(-90deg);
+}
+label{
+	cursor: pointer;
+	user-select: none;
+	
+	position: absolute;
+	top:45%;
+	left:35%;
+	display:inline-block;
+	 margin-left: auto;
+     margin-right: auto;
+     overflow: hidden;
+	background-color: hsla(300, 100%, 85%, 1);
+	background-repeat: no-repeat;
+	width: 410px;
+    height: 180px;
+	margin-top: -1.5em;
+	z-index:7;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	text-shadow: 0px 1px 1px #4d4d4d;
+	border-bottom:3px solid #7b8b2f;
+}
+.cntr{
+	margin-top: 0.625em;
+	margin-left: 0.625em;
+	background-image: url(openlogo.png), url(openlogo.png);
+	background-repeat: no-repeat;
+	//position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#door-left, #door-right {
+	filter: Alpha(Opacity=80);
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
+	opacity: 0.8;
+	position: absolute;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+
+	width: 50%;
+	height: 100%;
+	z-index: 6;
+	background:hsla(0, 9%, 42%, 0.64);
+	display: inline-block;
+	
+	transition: 2s;
+	-moz-transition: 2s;
+	-webkit-transition: 2s;
+	//border-right:2px solid #050505;
+	border:2px solid hsla(300, 100%, 50%, 1);
+}
+
+#door-left{
+    left:0%;
+ }
+#door-right {
+  left: 50%;
+   }
+#doorcon{
+	position: relative;
+	margin: 10px   auto;
+	width: cover;
+  	z-index: 5;
+	//z-index: 3;
+  	-webkit-perspective: 1000;
+  	outline-style: ridge;
+	border-right:3px solid #262D2E;
+
+	
+ }
+ .slide_in {
+	overflow: hidden;
+   	-webkit-transition: all 1s ease-in-out;
+  	-moz-transition: all 1s ease-in-out;
+  	-o-transition: all 1s ease-in-out;
+  	-ms-transition: all 1s ease-in-out;
+  	transition: all 1s ease-in-out;
+  	transition-timing-function: cubic-bezier(0,0,1,1);
+  	-webkit-transition-timing-function: cubic-bezier(0,0,1,1);
+  	-o-transition-timing-function: cubic-bezier(0,0,1,1);
+  	-moz-transition-timing-function: cubic-bezier(0,0,1,1);
+  	-ms-transition-timing-function: cubic-bezier(0,0,1,1);
+  	position: absolute;
+ }
+ .slide_in .left_gate {
+	left:-50%
+}
+.slide_in .right_gate {
+  	left:100%
+ 	}
+.plc{
+	z-index:1;
+	
+    margin-left: auto;
+    margin-right: auto;
+    width:456px;
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div id="doorcon">
+
+<div class="cover slide_in">
+
+<input type="checkbox" id="button" />
+
+
+<div id="door-left" class=" left_gate"></div><div id="door-right"class=" right_gate"></div>
+<div class ="plc">
+<h2>Lilytopia</h2>
+<img src="lily.jpg" alt="Mountain View" style="width:456px;height:608px">
+</div>
+
+</div>
+
+</div>
+<label  alt="Welcome to Hardrock Creations" for="button" onclick ><div class="cntr"></div></label>
+</body>
+</html>
