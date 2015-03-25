@@ -1,0 +1,13 @@
+
+<CENTER><APPLET CODE="SpotLightApplet.class" WIDTH="177"
+ HEIGHT="277">
+<PARAM NAME="Image" VALUE="galeister1.jpg">
+<PARAM NAME="SpotRadius" VALUE="20">
+<PARAM NAME="FadeRange" VALUE="3">
+<PARAM NAME="Area0"
+ VALUE="130 255 205 315 http://www.en.com/users/elmer/werks.html">
+</APPLET><P><FONT COLOR=FFFFCC>[ Just move your Mouse over the Applet ...Straight above ! ]<BR>{ You can setup "Hot Spots" as URLinks. }</FONT></CENTER>
+
+
+[ Add your owm IMaGe, adjust the Width and Height, add HotSpots if you want,
+'tweak' the Spot Radius and the Fade value. ]

@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+  <head>
+     <title>The Kitchen Dreams Network - Home</title>
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<!-- Shirleen Magnezi --> 
+	<!-- December 15, 2013 --> 
+	<!-- CMST 388  - Final Project -->
+
+	<link rel="stylesheet" media="screen" href="style2.css"/>
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<meta name="keywords" content="kitchen shared-use rent dc commercial test commissary cooperative licensed" />
+	<meta name="author" content="Shirleen Magnezi"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="revisit-after" content="1 month"/>
+	
+     <script type= 'text/javascript' >
+	
+	<!-- script to validate the form -->
+	
+		/* <![CDATA[ */		
+			function validateform(vf) {
+     if (vf.fName.value == "") {
+          alert("Please Specify your First Name.");
+           vf.fName.focus();
+            return false;
+         }
+	if (vf.lName.value == "") {       //use of f in the last name
+          alert("Please Specify your Last Name.");
+           vf.lName.focus();
+            return false;
+         }
+
+		 
+var mystring = vf.email.value;
+       var newstring = mystring.match(/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\..{2,2}))$)\b/gi)
+	if (!newstring) {
+		alert(mystring +  "Please enter an email address (for example, abc@acme.com).");
+		vf.email.focus();
+		
+		return false;
+	}	
+	if (vf.phone.value == "") {       //use of f in the last name
+          alert("Please enter your phone number.");
+           vf.phone.focus();
+            return false;
+         }
+
+			alert("Thank you for your submission!");	
+			}//end function validateForm
+	/* ]]> */
+	</script>
+	</head>
+<body> 
+
+	<div class="page-wrapper">
+
+
+	 <div id="header">
+	  <div id="nav2">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+		<td style="width: 10px" />
+		<td><img src="images/CambodianStreetRibs2.jpg" alt="Cambodian Street Ribs" /></td>
+		<td style="width: 10px" />
+		<td><img src="images/KahluaCreamedCorn2.jpg"  alt="Kahlua Creamed Corn"/></td>
+	<!--http://nova.umuc.edu/~ct388b14/Final_Project/images/KahluaCreamedCorn2.jpg"-->
+		<td style="width: 10px"/>
+		<td><img src="images/Food_Meat2.jpg" alt="Meat" /></td>
+		<td style="width: 10px"/>
+		</tr></table>
+
+		</div>
+
+		<div id="logo" >
+			<a href="home.html" class="logo"><img src="images/logo8.png" alt="The Kitchen Dreams Network" width="150" height="150" /></a>   
+		</div>
+
+	 
+
+	<h1><script type="text/javascript">
+		/* <![CDATA[ */		
+			/*
+			Neon Lights Text
+			By JavaScript Kit (http://javascriptkit.com)
+			For this script, TOS, and 100s more DHTML scripts,
+			Visit http://www.dynamicdrive.com
+			*/
+									
+			var message="The Kitchen Dreams Network"
+			var neonbasecolor="#ffffff";
+			var neontextcolor="hsla(240,50%,25%,1.0)"
+			var neontextcolor2="#FFFFA8"
+			var flashspeed=250  //in milliseconds
+			var flashingletters=3						// number of letters flashing in neontextcolor
+			var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+			var flashpause=0
+
+			///No need to edit below this line/////
+
+			var n=0
+			if (document.all||document.getElementById){
+			//document.write('<font color="'+neonbasecolor+'">')
+			document.write('<style= color="'+neonbasecolor+'">')
+			for (m=0;m<message.length;m++)
+			document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+			document.write('</font>')
+			}
+			else
+			document.write(message)
+
+			function crossref(number){
+			var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+			return crossobj
+			}
+
+			function neon(){
+
+			//Change all letters to base color
+			if (n==0){
+			for (m=0;m<message.length;m++)
+			//eval("document.all.neonlight"+m).style.color=neonbasecolor
+			crossref(m).style.color=neonbasecolor
+			}
+
+			//cycle through and change individual letters to neon color
+			crossref(n).style.color=neontextcolor
+
+			if (n<message.length-1){
+				n++
+				}
+			else{
+				n=0
+				clearInterval(flashing)
+				setTimeout("beginneon()",1500)
+				return
+				}
+				
+			}
+
+			function beginneon(){
+			if (document.all||document.getElementById)
+
+			flashing=setInterval("neon()",flashspeed)
+
+
+			}
+
+			beginneon();
+	/* ]]> */
+	</script></h1>
+	</div>
+
+		<h2>Contact Us!</h2>
+
+
+
+		
+<div class="main supporting" id="supporting">
+
+	<div class="clientèle" id="clientèle">
+		<br/>
+		<p>If you have questions, comments, feedback, or want to learn more about The Kitchen Dreams Network, please fill out the form below.<br/><br/>
+			Required fields are marked with an <span class="red">*</span></p>
+	  <div id="wrapper">
+			 <br/><br/>
+
+			<form name="sf" action="mailto:smagnezi@student.umuc.edu" method="post" enctype="text/plain" onSubmit="return validateform(this);">
+
+			<fieldset><legend><b>Contact Information</b></legend>
+			  <div class="column">
+			  
+			  <table>
+
+			 <tr>
+			  <td>First Name</td>
+			  <td><input type="text" name="fName" size="20" maxlength="25"   placeholder="First Name"/><span class="red">*</span>
+			  </td>
+			 </tr>  
+			 <tr>
+			<td>Last Name</td>
+			  <td><input type="text" name="lName" size="20" maxlength="25"   placeholder="Last Name"/><span class="red">*</span>
+
+			  </td>
+			 </tr>  
+			<tr>
+			  <td>Email Address</td>
+			  <td><input type="text" name="email" size="30" maxlength="50" placeholder="you@youremail.com"/><span class="red">*</span>
+			  </td>
+			 </tr> 
+			 
+			 <tr>
+			  <td>Phone</td>
+			  <td><input type="text" name="phone" size="20" maxlength="15" placeholder="123 456 6666"/><span class="red">*</span>
+			  </td>
+			 </tr>  
+			 
+			  
+			  
+			  
+			<tr>
+			  <td>Subject </td> 
+			  <td><input type="text" name="subject" id="subject" size="20" maxlength="50 "/></td></tr>
+			 <tr>
+			  <td>Message </td> 
+			  <td> <textarea  name="message" id="message" rows="4" cols="30"> </textarea> </td>
+			 
+			   </tr>
+				<tr>    
+			  <td> <br/></td>
+				</tr>
+				  <tr>
+			  <td></td><td>  <input type="submit" value="Submit "/></td> <td>
+			  <input type="reset" value="Clear"/> </td> </tr>
+			   </table>     
+
+					
+			 </div>
+			 
+			 
+			</fieldset>
+			</form>		
+		</div>
+	</div>
+	<div class="participation" id="participation">
+		
+		
+	</div>
+		
+<div class ="footer " style="text-align:center">
+			<a href="home.html">Home</a>&nbsp;&nbsp;<a href=""kitchen.html"">Kitchen</a>&nbsp;&nbsp;<a href="resources.html">Resources</a>&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
+			&nbsp;&nbsp;<a href="reference.html">Reference Page</a><br/>
+			The Kitchen Dreams Network - Washington, DC<br/>
+			202.123.4566 (voice) - 202.123.7777 (fax) - <a>info@thekitchendreamsnetwork.com</a><br/>
+			Copyright &#169; 2013- The Kitchen Dreams Network
+		<br/>
+			
+				<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="validate-css">CSS</a>
+				
+			</div>
+
+	</div>
+
+	<div class="sidebar">
+
+		<div class="design-selection" id="design-selection">
+			<div class="menu" id="menu">
+					<ul class="navBar">						
+					<li><a href="home.html" >Home</a></li>
+
+					<li><a href="kitchen.html">Kitchen</a>
+					<br/>
+					<ul>
+						
+							<li><a href="ourkitchen.html">Our Kitchen</a></li>
+						<li><a href="rates.html">Our Rates</a></li>
+							<li><a href="register.html">Register</a></li>
+						<li><a href="reserve.html">Reserve Space</a></li>
+						</ul>
+					</li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="contact.html">Contact Us!</a></li>
+					<li><a href="references.html">Reference Page</a></li>
+					</ul>
+					
+				
+			</div>
+
+		
+
+		</div>
+	</div>
+	</div>
+	
+</body>
+</html>

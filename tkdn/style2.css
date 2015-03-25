@@ -1,0 +1,486 @@
+﻿
+
+body {
+	margin:0;
+	padding:0;
+	font:75%/1.4 verdana,Helvetica,sans-serif;
+	background:
+		linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, #C0C0C0 75%, #C0C0C0) 0 0,
+		linear-gradient(-45deg, #C0C0C0 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
+		linear-gradient(45deg, #C0C0C0 17%, transparent 17%, transparent 25%, #C0C0C0 25%, #C0C0C0 36%, transparent 36%, transparent 64%, #C0C0C0 64%, #C0C0C0 75%, transparent 75%, transparent 83%, #C0C0C0 83%) 1em 1em;
+		background-color: white;
+		background-size: 2em 2em;
+		height: 100%;
+	
+		text-align:center;
+
+		color: hsla(240, 0%, 13%, 1.0);
+		text-align:center;
+}
+
+h2 {
+text-align:center;
+color:#ffff;
+/*color:hsla(0,100%,25%,1.0);*/
+}
+h1 {
+	text-align:center;
+	text-shadow: 1px 1px hsla(240,75%,13%,1.0), 2px 2px hsla(180,75%,75%,1.0), 3px 3px hsla(180,100%,50%,1.0);
+		        webkit-transition: all 0.12s ease-out;
+		       moz-transition: all 0.12s ease-out;
+		       o-transition: all 0.12s ease-out;
+}
+
+		h1:hover {
+		    position: relative; top: -3px; left: -3px; 
+		    text-shadow: 1px 1px  	#9370DB, 2px 2px   	#9370DB, 3px 3px #778899, 4px 4px  	#778899, 5px 5px 	#778899, 6px 6px  	#778899;
+		}
+ 
+
+h3 {
+	height:38px;
+	margin:0;
+	padding:0;
+
+	text-indent: 10%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+p {margin:0;padding:0;}
+
+	.pA{
+	color: #808;
+	font-weight: bold; 
+	}
+
+a {
+	color: hsla(240,50%,13%,1.0);
+	background-color:hsla(240,50%,75%,1.0);
+	text-decoration:underline;
+	width: 100px;
+}
+
+	a:hover, a:hover {
+	color:hsla(0,38%,25%,1.0);
+
+	background-color: hsla(0,13%,75%,1.0);
+	 font-family:Georgia,'Times New Roman',  sans-serif;
+	}
+
+#header div#logo {
+  z-index: 5;
+  position: relative;
+  text-align: left;
+  top: -34px;
+  left: 10px;
+  height: 89px;
+  width: 335px;
+}
+
+
+.running
+{ margin:25px 125px 25px 25px;
+	float:right;
+	height: 24px;
+}
+.logo
+{
+	position:relative; 
+	--background-color: hsl(240,75%, 75%, 1.0) ; 
+	float:left;
+	 bottom:20px;
+	left:10px;
+
+	text-decoration: none;
+	width: 150px;
+	height: 150px;
+	margin:75px 25px 25px 25px;
+
+	border: 2px inset hsla(240,25%,38%,0.4);
+	 overflow: hidden;
+    border-radius:20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+	 -khtml-border-radius: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+
+	}
+
+
+.big {
+line-height: 180%;
+ font-size: 1.2em;}
+
+.navBarA{ margin-top: 10px;
+  list-style-type: none;
+ }
+
+.navBar { margin-top: 10px;
+  list-style-type: none;
+  margin-left: 4em;
+  
+  top: 114px;
+}
+.navBar a { text-decoration: none;
+text-align:left;
+  font-size: 1.1em;
+
+}
+	.navBar a:link { 
+			 background-color:hsla(240,75%,25%,1.0);
+			color:#ffffff; 
+			display:  block;
+			line-height: 120%;
+			}
+
+	.navBar a:visited { 	color: #003300;
+				background-color: hsla(240,100%,50%,1.0); 
+				}
+
+	.navBar a:focus  { 	color:hsla(0,38%,25%,1.0);
+
+					background-color: hsla(0,13%,75%,1.0);
+	}
+	.navBar a:hover  { 	color: #330000;
+				background-color: #eeeeee; 
+				}
+
+	.navBar a:active  { 	  color: hsla(240,75%,50%,1.0);
+	font: 100%/1.5 Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+	}
+
+table { position:relative;
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+		border-spacing: 0px;
+		}
+	tr, th, td { border: none;
+				border-spacing:0px;
+				 cellpadding: 0;
+				 cellspacing: 0;
+				 padding : 0 2px 0;
+	
+
+	}
+
+/* ////////////// layout ///////////////// */
+
+/* Used to removed underlined space around img tags in nav bars (Opera) */
+div#nav2 table tr td a
+{
+  text-decoration: none;
+ 
+}
+
+div#nav2 table
+{
+  float: right;
+  position: relative;
+
+}
+
+
+div#content table {
+    margin-bottom: 2em;
+}
+.red{color:red;}
+#header div#nav2 {
+  margin-top: 5px;
+  height: 78px;
+  width: 70%;
+   background-color: hsla(240,50%,88%,0.7);
+   
+  background-repeat: repeat-x;
+  background-position: bottom;
+  float:right;
+}
+
+div.column { float:left;
+ width:500px; 
+ margin-left:5px;
+ background-color:#E8E8E8 ;
+ border: 5px solid #989898 ;
+ padding:2px; 
+ color:black;
+ text-align:left;
+ } 
+td.left{
+text-align: left;
+padding:0 5px;
+}
+td{
+text-align: right;
+}
+
+/*//////////////*/
+.page-wrapper {
+
+width:772px;
+margin:0 auto;
+padding:0 13px;
+position:relative;
+background: hsla(240,0%,75%,1.0);
+
+border-left:1px solid #ffffff;
+border-right:1px solid #ffffff;
+color: hsla(240,50%,50%,1.0);
+text-align:left;
+}
+
+header {
+width:772px;
+height:178px;
+background:url(bg2.png) no-repeat;
+}
+
+
+.summary, .preamble, .clientèle, .participation, .benefits, .requirements {
+width:546px;
+background-color:#ffffff;
+background-repeat:repeat-y;
+margin:0 0 2px 226px;
+color:#454545;
+display:block;
+padding:0;
+}
+
+
+
+.sidebar {
+position:absolute;
+top:200px;
+left:20px;
+width:207px;
+}
+
+	.sidebar li {
+
+	list-style:none;
+
+	background:url(line.gif) bottom repeat-x;
+	}
+
+	.sidebar li a {
+
+	padding-left:7px;
+	background:url(link.gif) left center no-repeat;
+	text-decoration:none;
+	}
+
+	.sidebar li a:hover {
+	text-decoration:underline;
+	}
+	.sidebar img {
+background:url(images/creamcaramel.jpg) no-repeat;
+ height:130;
+ width:200;
+	 -moz-border-radius:  20px;
+	  -webkit-border-radius: 20px;
+	  - khtml-border-radius: 20px;
+	border-radius:  20px;
+	
+}
+
+.summary p, .clientèle p, .benefits p {
+padding:0 15px 10px 77px;
+}
+
+.preamble p, .participation p, .requirements p {
+padding:0 85px 10px 17px;
+}
+	.preamble p:last-child, .main p:last-child {
+		padding-bottom: 25px;
+	}
+.requirements p:nth-child(6) {
+padding:0 85px 10px 17px;
+}
+
+
+	.summary p:first-child {
+	padding-top:14px;
+	background:
+		url(quicksummary_top.gif) top no-repeat,
+		url(right_bg.gif) right repeat-y;
+	}
+
+	.summary p:last-child {
+	padding-bottom:20px;
+	background:
+		url(right_bottom.gif) bottom no-repeat,
+		url(right_bg.gif) right repeat-y;
+	}
+
+	.design-selection li a {
+
+	  position:relative;
+	display:block;
+	font-weight:bold;
+	background-position:0 0.6em;
+
+	}
+
+	.design-selection a.designer-name {
+	--display:inline;
+	color:#666666;
+	padding:0;
+	background:none;
+	background-color:#ffffff;
+	}
+	.products li ul {
+       position: absolute;
+       left: -999em;
+       width: 200px;
+     }
+
+     .products li:hover ul {
+       top: 0;
+       left: 200px;
+       padding-left: 50px;
+     }
+	 
+	
+.footer {
+width:539px;
+margin:5px 0 0 226px;
+text-align:right;
+padding:3px 14px 43px 0;
+color:hsla(240,100%,25%,1.0);
+}
+
+
+	.footer a{
+	text-decoration:none;
+	color:#888888;
+	background-color:#dfdfdf;
+	border:1px solid #bdbdbd;
+	padding:3px 3px;
+	height:100%;
+	}
+
+	.footer a:hover{
+	background-color:#ebebeb;
+	color:#777777;
+	}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6{display:none;}
+#menu {
+  padding:0;
+  margin:0;
+  width:0; 
+  
+  }
+#menu a, #menu a:visited {
+
+	list-style-type:none; 
+	display:block;
+	width:10em;
+	border-top: 7px solid #808;
+	border-bottom: 0;
+
+	font-family:arial, verdana, sans-serif;
+	font-size:1.1em; 
+	text-align:center; 
+	text-decoration:none; 
+	background-color: hsla(0,50%,75%,1.0);
+	color: hsla(240,100%,25%,1.0);;
+	border-left:  15px solid hsla(240,100%,25%,1.0);
+	--border-left:  15px solid hsla(240,50%,75%,1.0);
+
+	padding:0.15em,; 
+  }
+	  #menu li {
+	  list-style-type:none;
+	  margin:0 0 0.2em 0; 
+	  }
+	  
+	  #menu a:hover
+	{
+		display:block;
+		text-decoration: none;
+		color:  hsla(0,38%,75%,1.0);
+		background-color:hsla(240,100%,25%,1.0);
+		border-left: 15px solid hsla(0,38%,75%,1.0);
+
+	}
+  
+	
+/* ///////////// background image ////////////// */
+
+.summary p:first-child {
+padding-top:14px;
+position: relative;
+background:url(quicksummary_top.gif) top no-repeat;
+}
+
+.summary p:last-child {
+padding-bottom:20px;
+}
+
+/* right image */
+.summary p, .clientèle p , .benefits p {
+background:url(right_bg.gif) right repeat-y;
+}
+.design-selection, .design-archives, .resources {
+background:url(left_bg.gif) repeat-y;
+}
+
+/* side image */
+.summary {background-image:url(img_quicksummary.jpg);background-position:left bottom;}
+.preamble {background-image:url(img_preamble.jpg);background-position:right bottom;}
+.clientèle {background-image:url(img_clientèle.jpg);background-position:left bottom;}
+.participation {background-image:url(img_participation.jpg);background-position:right bottom;}
+.benefits {background-image:url(img_benefits.jpg);background-position:left bottom;}
+.requirements {background-image:url(img_requirements.jpg);background-position:right bottom;}
+
+
+
+/* h3 image */
+.preamble h3 {background:url(title_preamble.gif) no-repeat;}
+.clientèle h3 {background:url(title_clientèle.gif) no-repeat;}
+.participation h3 {background:url(title_participation.gif) no-repeat;}
+.benefits h3 {background:url(title_benefits.gif) no-repeat;}
+.requirements h3 {background:url(title_requirements.gif) no-repeat;}
+.design-selection h3 {background:url(title_select.gif) no-repeat;}
+.design-archives h3 {background:url(title_archives.gif) no-repeat;}
+.resources h3 {background:url(title_resources.gif) no-repeat;}
+
+/* bottom image */
+.summary p:last-child, .preamble p:nth-child(4), .clientèle p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2), .requirements p:nth-child(6) {
+position: relative;
+padding-bottom: 20px;
+}
+
+.summary p:first-child:before {
+content: ' ';
+display: block;
+position: absolute;
+top: 20px;
+bottom: 0;
+right: 0;
+width:20px;
+background:url(right_bg.gif) right repeat-y;
+}
+.summary p:last-child:after, .preamble p:nth-child(4):after, .clientèle p:nth-child(3):after, .participation p:nth-child(4):after, .benefits p:nth-child(2):after, .requirements p:nth-child(6):after {
+content: ' ';
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height:20px;
+
+background:url(right_bottom.gif) bottom no-repeat;
+width: 100%;
+height: 20px;
+margin-top: -20px;
+}
+
+.design-selection ul, .design-archives ul, .resources ul{
+margin:0;
+padding:0 25px 20px 17px;
+background:url(left_bottom.gif) bottom no-repeat;
+}

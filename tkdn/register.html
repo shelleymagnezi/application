@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+  <head>
+     <title>The Kitchen Dreams Network - Home</title>
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<!-- Shirleen Magnezi --> 
+	<!-- December 15, 2013 --> 
+	<!-- CMST 388  - Final Project -->
+
+	<link rel="stylesheet" media="screen" href="style2.css"/>
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<meta name="keywords" content="kitchen shared-use rent dc commercial test commissary cooperative licensed" />
+	<meta name="author" content="Shirleen Magnezi"/>
+	<meta name="robots" content="index, follow"/>
+	<meta name="revisit-after" content="1 month"/>
+	
+	  <script type= 'text/javascript' >
+   	<!-- script to validate the form -->
+		/* <![CDATA[ */		
+		
+    function getradiovalue(radioObject)
+      {
+        var value = radioObject.value
+          for (var i=0; i<radioObject.length; i++)
+            {
+             if (radioObject[i].checked)
+              {
+               value = radioObject[i].value 
+               break
+               }
+             else
+              {
+               value = ""
+               }
+           }
+     return value;
+    }
+ 
+ function getcheckbox() {
+      var itemselected = false;
+       for (var i=0; i<4; i++) {
+        if(document.sf.Items[i].checked == true) {
+          itemselected = true;
+           break;
+         }
+       else
+        {
+         itemselected = false;
+         }
+   
+        }
+     return itemselected;
+    }   
+
+
+function validateform(vf) {
+     if (vf.fName.value == "") {
+          alert("Please Specify your First Name.");
+           vf.fName.focus();
+            return false;
+         }
+	if (vf.lName.value == "") {       //use of f in the last name
+          alert("Please Specify your Last Name.");
+           vf.lName.focus();
+            return false;
+         }
+
+		 
+var mystring = vf.Email.value;
+       var newstring = mystring.match(/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\..{2,2}))$)\b/gi)
+	if (!newstring) {
+		alert(mystring +  "Please enter an email address (for example, abc@acme.com).");
+		vf.Email.focus();
+		
+		return false;
+	}	
+	
+
+	
+	 var pass1 = document.sf.pass_1.value;
+  var pass2 = document.sf.pass_2.value;
+
+ if(document.sf.pass_1.value == "") {
+		alert("Please enter a password.");
+		
+		  document.sf.pass_1.focus();
+		   return false;
+		}
+	
+if(document.sf.pass_2.value == "") {
+		alert("Please enter a Confirm password.");
+		  document.sf.pass_2.focus();
+		   return false;
+		}
+
+
+	if(pass1  !== pass2)  {
+	alert("Password Does not Match.");
+		  document.sf.pass_2.focus();
+		   return false;
+		}
+
+
+	
+  if (document.sf.secQuestion.value == 0) { 
+                        alert("Please, select a Security Question");
+                        return false;
+                        }
+                        
+                           if (document.sf.response.value == "") {
+                           alert("Please, put an Answer for Your Security Question");
+                           return false;
+                           }
+
+
+if (document.getElementById("Yes").checked == false && document.getElementById("No").checked == false) {
+		alert("Please indicate whether you'd like us to send you emails.");
+		return false;
+	} 
+
+
+
+if (getcheckbox(vf.Items) == "") {
+   alert("You Must select at least one Items");
+      return false;
+   }
+  }
+  	/* ]]> */
+</script>
+
+</head>
+<body> 
+
+	<div class="page-wrapper">
+
+
+	 <div id="header">
+	  <div id="nav2">
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+		<td style="width: 10px" />
+		<td><img src="images/CambodianStreetRibs2.jpg" alt="Cambodian Street Ribs" /></td>
+		<td style="width: 10px" />
+		<td><img src="images/KahluaCreamedCorn2.jpg"  alt="Kahlua Creamed Corn"/></td>
+	<!--http://nova.umuc.edu/~ct388b14/Final_Project/images/KahluaCreamedCorn2.jpg"-->
+		<td style="width: 10px"/>
+		<td><img src="images/Food_Meat2.jpg" alt="Meat" /></td>
+		<td style="width: 10px"/>
+		</tr></table>
+
+		</div>
+
+		<div id="logo" >
+			<a href="home.html" class="logo"><img src="images/logo8.png" alt="The Kitchen Dreams Network" width="150" height="150" /></a>   
+		</div>
+
+	 
+
+	<h1><script type="text/javascript">
+		/* <![CDATA[ */		
+			/*
+			Neon Lights Text
+			By JavaScript Kit (http://javascriptkit.com)
+			For this script, TOS, and 100s more DHTML scripts,
+			Visit http://www.dynamicdrive.com
+			*/
+									
+			var message="The Kitchen Dreams Network"
+			var neonbasecolor="#ffffff";
+			var neontextcolor="hsla(240,50%,25%,1.0)"
+			var neontextcolor2="#FFFFA8"
+			var flashspeed=250  //in milliseconds
+			var flashingletters=3						// number of letters flashing in neontextcolor
+			var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+			var flashpause=0
+
+			///No need to edit below this line/////
+
+			var n=0
+			if (document.all||document.getElementById){
+			//document.write('<font color="'+neonbasecolor+'">')
+			document.write('<style= color="'+neonbasecolor+'">')
+			for (m=0;m<message.length;m++)
+			document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+			document.write('</font>')
+			}
+			else
+			document.write(message)
+
+			function crossref(number){
+			var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+			return crossobj
+			}
+
+			function neon(){
+
+			//Change all letters to base color
+			if (n==0){
+			for (m=0;m<message.length;m++)
+			//eval("document.all.neonlight"+m).style.color=neonbasecolor
+			crossref(m).style.color=neonbasecolor
+			}
+
+			//cycle through and change individual letters to neon color
+			crossref(n).style.color=neontextcolor
+
+			if (n<message.length-1){
+				n++
+				}
+			else{
+				n=0
+				clearInterval(flashing)
+				setTimeout("beginneon()",1500)
+				return
+				}
+				
+			}
+
+			function beginneon(){
+			if (document.all||document.getElementById)
+
+			flashing=setInterval("neon()",flashspeed)
+
+
+			}
+
+			beginneon();
+	/* ]]> */
+	</script></h1>
+	</div>
+
+		<h2>Registration Form</h2>
+	<div class="summary" id="summary">
+ 	<p>Fill out the form below to register to use the kitchen.<br/>Required fields marked with an <span class="red">*</span></p>
+	</div>
+		<div class="main supporting" id="supporting">
+	<div class="clientèle" id="clientèle">
+	
+ <div id="wrapper">
+ <br/><br/>
+
+	<form name="sf" action="mailto:smagnezi@student.umuc.edu" method="post" enctype="text/plain" onSubmit="return validateform(this);">
+
+		<fieldset><legend><b>Step One: Personal Information</b></legend>
+		  <div class="column">
+				  <table>
+
+						 <tr>
+						  <td>First Name</td>
+						  <td><input type="text" name="fName" size="20" maxlength="25 "  placeholder="First Name"/><span class="red">*</span>
+						  </td>
+						 </tr>  
+						<td>Last Name</td>
+						  <td><input type="text" name="lName" size="20" maxlength="25"   placeholder="First Name"/><span class="red">*</span>
+
+						  </td>
+						 </tr>  
+						<tr>
+						  <td>Email Address</td>
+						  <td><input type="text" name="Email" size=30 maxlength="50" placeholder="you@example.com"><span class="red">*</span>
+						  </td>
+						 </tr> 
+						 <tr>
+						  <td style="color: hsla(240,50%,50%,1.0)"> Mailing Address: </td>
+						  <td>
+						  </td>
+						 </tr>  
+						 <tr>
+						  <td>Street 1</td>
+						  <td><input type="text" name="street1" size="30" maxlength="50" placeholder="123 Main Street">
+						  </td>
+						 </tr>  
+						 <tr>
+						  <td>Street 2</td>
+						  <td><input type="text" name="street2" size="30" maxlength="50" placeholder="Apt. 456">
+						  </td>
+						 </tr>  
+						 <tr>
+						  <td>City</td>
+						  <td><input type="text" name="city" size="30" maxlength="50" placeholder="Anytown">
+						  </td>
+						   <tr>
+						  <td>Zip</td>
+						  <td><input type="text" name="city" size="30" maxlength="50" placeholder="30045">
+						  </td>
+						  </tr>
+					 </table>
+				 </div>
+			</fieldset>
+
+			<fieldset><legend><b>Step Two: Licensing &amp; Payment</b></legend>
+				  <div class="column">
+					  <table>
+
+					 <tr>
+					  <td>Food Handler’s Certification # </td>
+					  <td><input type="text" name="fhandler" size="20" maxlength=25   placeholder="FHCN123"/>
+					  </td>
+					 </tr>  
+					<td>Insurance  Policy #</td>
+					  <td><input type="text" name="insurance" size="20" maxlength=25   placeholder="ABC123"/>
+
+					  </td>
+					 </tr>  
+					<tr>
+					  <td>Shared Kitchen User City License #</td>
+					  <td><input type="text" name="skcul" size="30" maxlength="50" placeholder="SKCULN123"/>
+					  </td>
+					 </tr> 
+					<tr>
+					  <td>Credit Card:</td>
+					  <td><input type="text" name="street1" size="30" maxlength="50" />
+					  </td>
+					 </tr>  
+					 <tr>
+					  <td>CVV code</td>
+					  <td><input type="text" name="cvv" size="4" maxlength="4" />
+					  </td>
+					 </tr>  
+
+				 
+				 </table>
+			 </div>
+		</fieldset>
+
+		<fieldset><legend><b>Step Three: Security Information</b></legend>
+				<div class="column">
+					<table>
+						<tr>
+						  <td>Password</td>
+						  <td><input type="password" name="pass_1" size="15" maxlength="25"/><span class="red">*</span>
+						  </td>
+						 </tr> 
+						<tr> 
+						  <td>Confirm Password</td>
+						  <td><input type="password" name="pass_2" size="15" maxlength="25"/><span class="red">*</span>
+						  </td>
+						 </tr> 
+						<tr><td>Security Question</td>
+						<td><select  name="secQuestion">
+								<option value="0" selected>[choose your Secret question]</option>
+							<option value="1">What is your mother's maiden name?</option>
+								<option value="2">What is the name of your pet?</option>
+								<option value="3">What is your favorite sports team?</option>
+								<option value="4">Where were you born?</option>
+								<option value="5">What is your favorite food?</option><br/>
+								</select></td></tr>
+									<tr><td><label for="secResponse">Response</label></td>
+										<td><input type="text" id="response" name="response"  placeholder="Your Answer"><span class="red">*</span>	</td><br/>	
+						</tr>
+				</table>
+			</div>
+		</fieldset>
+
+		<fieldset><legend><b>Step Four: Preferences</b></legend>
+			  <div class="column">
+				<table>
+				<tr>
+				 <td>I am using the kitchen for: <span class="red">*</span></td>
+				 
+				  <td  class="left"><input type="radio" id="Yes" name="offers" value="Yes">Business
+				  <input type="radio" id="No" name="offers" value="No">Pleasure
+
+				  </td>
+				  
+				</tr>
+				<tr>
+				 <td
+				 </td>
+				</tr>
+
+				<tr>
+				 <td valign="middle">Please Check <span class="red">One:</span><span class="red">*</span></td>
+
+
+				 <td class="left"><input type="checkbox" name="Items" value="Caterer">Caterer
+
+				 <input type="checkbox" name="Items" value="Baker">Baker
+				 <input type="checkbox" name="Items" value="Chef">Private Chef</td></tr>
+				<tr><td></td>
+				 <td class="left">
+				<input type="checkbox" name="Items" value="FoodTruck ">Food Truck Vendor</td></tr>
+				<tr><td></td>
+				 <td class="left">
+				<input type="checkbox" name="Items" value="FarmMarket  ">Farm Market  Vendor</td></tr>
+				<tr><td></td><td class="left">
+				<input type="checkbox" name="Items" value="CulSchool">Culinary School Graduate</td></tr>
+				<tr><td></td>
+				 <td class="left">
+				<input type="checkbox" name="Items" value="ReligiousGroup">Religious Group
+				<input type="checkbox" name="Items" value="Other">Other</td></tr></tr>
+				<tr>
+				 <td
+				 </td>
+				</tr>
+
+				<tr>
+				 <td></td>
+				 <td>
+				</td>
+				</tr>
+			</table>
+		</div>
+		</fieldset>
+	<br/>
+
+
+		<input type="submit" value="Submit Registration">
+		  <input type="reset" value="Clear the Form">  
+	</form>
+</div>
+
+	</div>
+
+
+	<div class ="footer " style="text-align:center">
+			<a href="home.html">Home</a>&nbsp;&nbsp;<a href=""kitchen.html"">Kitchen</a>&nbsp;&nbsp;<a href="resources.html">Resources</a>&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
+			&nbsp;&nbsp;<a href="reference.html">Reference Page</a><br/>
+			The Kitchen Dreams Network - Washington, DC<br/>
+			202.123.4566 (voice) - 202.123.7777 (fax) - <a>info@thekitchendreamsnetwork.com</a><br/>
+			Copyright &#169; 2013- The Kitchen Dreams Network
+		<br/>
+			 <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+  </p>
+				
+			</div>
+
+
+
+	<aside class="sidebar">
+
+		<div class="design-selection" id="design-selection">
+			<div class="menu" id="menu">
+					<ul class="navBar">						
+					<li><a href="home.html" >Home</a></li>
+
+					<li><a href="kitchen.html">Kitchen</a>
+					<br/>
+					<ul>
+						
+							<li><a href="ourkitchen.html">Our Kitchen</a></li>
+						<li><a href="rates.html">Our Rates</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="reserve.html">Reserve Space</a></li>
+						</ul>
+					</li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="contact.html">Contact Us!</a></li>
+					<li><a href="references.html">Reference Page</a></li>
+					</ul>
+					
+		
+			</div>
+
+
+		</div>
+	</aside>
+</div>
+	
+</body>
+</html>
